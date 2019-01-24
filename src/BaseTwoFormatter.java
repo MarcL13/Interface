@@ -10,14 +10,11 @@ public class BaseTwoFormatter implements NumberFormatter
 	public String getNumFormat(int num)
 	{
 		String end = "";
-		int holdingNum;
-		int remainder;
-		while(num/2 != 0)
+		int newNum = num;
+		while(newNum >= 0)
 		{
-			remainder = num % 2;
-			end = remainder + end;
-			holdingNum = num/2;
-			num = holdingNum;
+			end = (num % 2) + end;
+			newNum = num/2;
 		}
 		return end;
 	}
