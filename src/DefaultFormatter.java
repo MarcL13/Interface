@@ -16,7 +16,14 @@ public class DefaultFormatter implements NumberFormatter
 			String next = holder.substring(i,i+1);
 			if(holder.substring(i).length() % 3 == 0)
 			{
-				end = "," + next + end;
+				if(i == 0)
+				{
+					end = next + end;
+				}
+				else
+				{
+					end = "," + next + end;
+				}
 			}
 			else if (holder.substring(i).length() % 3 != 0)
 			{

@@ -1,4 +1,3 @@
-
 public class MainJawn
 {
 
@@ -11,8 +10,11 @@ public class MainJawn
 		}
 		System.out.println("Balance Population: " + findAverage(myArr));
 
-		DefaultFormatter test = new DefaultFormatter(10000000);
-		System.out.println(test.getNumFormat(10000000));
+		DefaultFormatter test = new DefaultFormatter(100);
+		System.out.println(test.getNumFormat(100));
+		
+		BaseTwoFormatter test1 = new BaseTwoFormatter(2);
+		System.out.println(test1.getNumFormat(2));
 	}
 	
 	private static double findAverage(Measurable[] arr)

@@ -12,11 +12,13 @@ public class BaseTwoFormatter implements NumberFormatter
 		String end = "";
 		int holdingNum;
 		int remainder;
-		for(int i = 0; i < holder.length(); i++)
+		while(num/2 != 0)
 		{
 			remainder = num % 2;
 			end = remainder + end;
-			holdingNum = 
+			holdingNum = num/2;
+			num = holdingNum;
 		}
+		return end;
 	}
 }
