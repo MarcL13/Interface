@@ -13,8 +13,8 @@ public class MainJawn
 		DefaultFormatter test = new DefaultFormatter(100);
 		System.out.println(test.getNumFormat(100));
 		
-		BaseTwoFormatter test1 = new BaseTwoFormatter(2);
-		System.out.println(test1.getNumFormat(2));
+		BaseTwoFormatter test1 = new BaseTwoFormatter(100);
+		System.out.println(test1.getNumFormat(100));
 	}
 	
 	private static double findAverage(Measurable[] arr)
